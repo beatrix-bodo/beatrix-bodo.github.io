@@ -59,9 +59,12 @@ h1 {
 }
 
 .images img.portrait {
-  width: 49%;
+  width: 50%;
+  border-right: 2px solid white;
+  box-sizing: border-box;
 }
 
-.images img.portrait + img {
-  float: right;
+.images img.portrait + img.portrait {
+  border-right: 0;
+  border-left: 2px solid white;
 }
