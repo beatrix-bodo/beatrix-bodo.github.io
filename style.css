@@ -1,9 +1,27 @@
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+.initial {
+  height: 100vh;
+}
+
+.anchor {
+  padding-top: 150px;
+}
+
 h1 {
   color: #ff8383;
-  font-size: 120px;
+  font-size: 100px;
   font-family: 'Old Standard TT', serif;
   font-weight: 400;
   font-style: italic;
+}
+
+.menu {
+  margin-top: 5px;
+  margin-left: 20px;
 }
 
 .menu a {
@@ -24,31 +42,21 @@ h1 {
   margin-left: 20px;
 }
 
-.container {
-  width: 50%;
-  margin: auto;
-}
-
-.menu {
-  margin-top: 5px;
-  margin-left: 20px;
+.about {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3em;
 }
 
 .images img {
   width: 100%;
 }
 
-.initial {
-  height: 100vh;
+.hvr-fade {
+  transition: color .3s, background-color .3s;
 }
 
-.anchor {
-  padding-top: 150px;
-
-}
-
-.about {
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.3em;
+.hvr-fade:hover {
+  background-color: #cecece;
+  color: white;
 }
