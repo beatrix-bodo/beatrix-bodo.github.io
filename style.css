@@ -1,7 +1,7 @@
 h1 {
   color: #ff8383;
-  font-size: 100px;
-  font-family: 'Old Standard', serif;
+  font-size: 120px;
+  font-family: 'Old Standard TT', serif;
   font-weight: 400;
   font-style: italic;
 }
@@ -26,10 +26,29 @@ h1 {
 
 .container {
   width: 50%;
-  margin: 150px auto;
+  margin: auto;
 }
 
 .menu {
   margin-top: 5px;
   margin-left: 20px;
+}
+
+.images img {
+  width: 100%;
+}
+
+.initial {
+  height: 100vh;
+}
+
+.anchor {
+  padding-top: 150px;
+
+}
+
+.about {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3em;
 }
