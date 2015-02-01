@@ -1,0 +1,35 @@
+h1 {
+  color: #ff8383;
+  font-size: 100px;
+  font-family: 'Old Standard', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.menu a {
+  color: #cecece;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #cecece;
+  width: 80px;
+  height: 36px;
+  text-decoration: none;
+}
+
+.menu a + a {
+  margin-left: 20px;
+}
+
+.container {
+  width: 50%;
+  margin: 150px auto;
+}
+
+.menu {
+  margin-top: 5px;
+  margin-left: 20px;
+}
