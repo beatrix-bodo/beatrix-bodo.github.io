@@ -68,3 +68,31 @@ h1 {
   border-right: 0;
   border-left: 2px solid white;
 }
+
+@media (max-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .menu {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+
+  .menu a {
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    border: 2px solid #cecece;
+    width: 80px;
+    height: 36px;
+  }
+  .menu a + a {
+    margin-left: 10px;
+  }
+
+}
