@@ -13,13 +13,14 @@
 
 h1 {
   color: #ff8383;
-  font-size: 100px;
+  font-size: 80px;
   font-family: 'Old Standard TT', serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .menu {
+  position: relative;
   margin-top: 5px;
   margin-left: 20px;
 }
