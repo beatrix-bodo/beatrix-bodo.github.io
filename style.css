@@ -4,19 +4,21 @@
 }
 
 .initial {
-  height: 100vh;
+  height: 30vh;
 }
 
-.anchor {
-  padding-top: 150px;
+.highlight {
+  background: linear-gradient(-20deg, #B3FFAB 10%, #12FFF7 90%);
+  display: inline;
 }
 
 h1 {
-  color: #ff8383;
+  color: black;
   font-size: 80px;
-  font-family: 'Old Standard TT', serif;
-  font-weight: 400;
-  font-style: italic;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  line-height: 1.2;
 }
 
 .menu {
@@ -26,22 +28,23 @@ h1 {
 }
 
 .menu a {
-  color: #cecece;
+  color: #B3FFAB;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  border: 2px solid #cecece;
+  border: 8px solid #B3FFAB;
   width: 80px;
   height: 36px;
   text-decoration: none;
   transition: color .3s, background-color .3s;
+  text-rendering: optimizelegibility;
 }
 
 .menu a:hover {
-  background-color: #cecece;
+  background-color: #B3FFAB;
   color: white;
 }
 
@@ -50,9 +53,27 @@ h1 {
 }
 
 .about {
+  color: black;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Share Tech Mono', 'Arial', sans-serif;
   line-height: 1.3em;
+  text-rendering: optimizelegibility;
+  text-decoration: none;
+}
+
+.about:hover {
+  background-color: #B3FFAB;
+  color: white;
+  text-decoration: none;
+}
+
+.about:visited {
+  color: black;
+  font-size: 18px;
+  font-family: 'Share Tech Mono', 'Arial', sans-serif;
+  line-height: 1.3em;
+  text-rendering: optimizelegibility;
+  text-decoration: none;
 }
 
 .images img {
