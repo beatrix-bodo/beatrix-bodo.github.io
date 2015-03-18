@@ -1,6 +1,7 @@
 .container {
   width: 50%;
-  margin: auto;
+  margin-left: 30vh;
+  margin-top: 10vh;
 }
 
 .initial {
@@ -23,8 +24,8 @@ h1 {
 
 .menu {
   position: relative;
-  margin-top: 5px;
-  margin-left: 20px;
+  margin-bottom: 100px;
+  margin-top: 10px;
 }
 
 .menu a {
@@ -63,7 +64,7 @@ h1 {
 
 .about:hover {
   background-color: #B3FFAB;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -74,21 +75,6 @@ h1 {
   line-height: 1.3em;
   text-rendering: optimizelegibility;
   text-decoration: none;
-}
-
-.images img {
-  width: 100%;
-}
-
-.images img.portrait {
-  width: 50%;
-  border-right: 2px solid white;
-  box-sizing: border-box;
-}
-
-.images img.portrait + img.portrait {
-  border-right: 0;
-  border-left: 2px solid white;
 }
 
 @media (max-width: 1000px) {
@@ -116,5 +102,3 @@ h1 {
   .menu a + a {
     margin-left: 10px;
   }
-
-}
