@@ -1,11 +1,10 @@
 .container {
-  width: 50%;
-  margin-left: 30vh;
-  margin-top: 10vh;
+  width: 70vw;
+  margin: 10vh 15vw;
 }
 
 .initial {
-  height: 30vh;
+  height: 20vh;
 }
 
 .highlight {
@@ -13,7 +12,7 @@
   display: inline;
 }
 
-h1 {
+#quote {
   color: black;
   font-size: 80px;
   font-family: 'Arial', sans-serif;
@@ -29,15 +28,16 @@ h1 {
 }
 
 .menu a {
-  color: #B3FFAB;
+  color: #000;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 14px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  border: 8px solid #B3FFAB;
-  width: 80px;
+  border: 6px solid #000;
+  min-width: 80px;
   height: 36px;
   text-decoration: none;
   transition: color .3s, background-color .3s;
@@ -46,43 +46,48 @@ h1 {
 
 .menu a:hover {
   background-color: #B3FFAB;
-  color: white;
+  color: black;
 }
 
 .menu a + a {
   margin-left: 20px;
 }
 
+.menu a li {
+  padding: 0 10px;
+}
+
 .about {
+  margin-top: 1em;
   color: black;
-  font-size: 18px;
-  font-family: 'Share Tech Mono', 'Arial', sans-serif;
+  font-family: 'Slabo 27px', serif;
   line-height: 1.3em;
   text-rendering: optimizelegibility;
   text-decoration: none;
 }
 
-.about:hover {
-  background-color: #B3FFAB;
-  color: black;
-  text-decoration: none;
+.about a:hover {
+  color: #12FFF7;
 }
 
-.about:visited {
+.profiles i {
+  margin-top: 1em;
   color: black;
-  font-size: 18px;
-  font-family: 'Share Tech Mono', 'Arial', sans-serif;
-  line-height: 1.3em;
-  text-rendering: optimizelegibility;
+  letter-spacing: .3em;
   text-decoration: none;
+  transition: color .2s;
+}
+
+.profiles i:hover {
+  color: #12FFF7;
+}
+
+.profiles a:visited {
+  color: black;
 }
 
 @media (max-width: 1000px) {
-  .container {
-    width: 80%;
-  }
-
-  h1 {
+  #quote {
     font-size: 50px;
   }
 
@@ -91,14 +96,24 @@ h1 {
     margin-left: 5px;
   }
 
-  .menu a {
-    font-size: 18px;
-    line-height: 36px;
-    text-align: center;
-    border: 2px solid #cecece;
-    width: 80px;
-    height: 36px;
-  }
   .menu a + a {
     margin-left: 10px;
   }
+}
+
+.container h2 {
+  margin-top: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.circle {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.date {
+  font-weight: bold;
+}
