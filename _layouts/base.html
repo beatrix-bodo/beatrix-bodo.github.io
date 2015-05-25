@@ -1,0 +1,52 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<!--Hi! Thank you for peeking inside. I hope you're having a wonderful day!-->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <link type="text/css" rel="stylesheet" href="/reset.css">
+    <link type="text/css" rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700|Slabo+27px' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="menu">
+          <a href="/index.html">
+            <li>Home</li>
+          </a>
+          <a href="/about.html">
+            <li>About</li>
+          </a>
+          <a href="/portfolio.html">
+            <li>Portfolio</li>
+          </a>
+        </ul>
+      </nav>
+      {{ content }}
+    </div>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-59211107-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js"></script>
+    <script>
+      $('body').flowtype({
+        minimum   : 800,
+        maximum   : 1200,
+        fontRatio : 60
+      });
+    </script>
+  </body>
+</html>

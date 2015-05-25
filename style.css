@@ -1,10 +1,5 @@
-.container {
-  width: 70vw;
-  margin: 10vh 15vw;
-}
-
 .initial {
-  height: 20vh;
+  margin-top: 10vh;
 }
 
 .highlight {
@@ -21,7 +16,7 @@
   line-height: 1.2;
 }
 
-.menu {
+.initial .menu {
   position: relative;
   margin-bottom: 100px;
   margin-top: 10px;
@@ -38,7 +33,6 @@
   text-transform: uppercase;
   border: 6px solid #000;
   min-width: 80px;
-  height: 36px;
   text-decoration: none;
   transition: color .3s, background-color .3s;
   text-rendering: optimizelegibility;
@@ -47,6 +41,7 @@
 .menu a:hover {
   background-color: #B3FFAB;
   color: black;
+  text-decoration: none;
 }
 
 .menu a + a {
@@ -86,22 +81,7 @@
   color: black;
 }
 
-@media (max-width: 1000px) {
-  #quote {
-    font-size: 50px;
-  }
-
-  .menu {
-    margin-top: 20px;
-    margin-left: 5px;
-  }
-
-  .menu a + a {
-    margin-left: 10px;
-  }
-}
-
-.container h2 {
+.about h2 {
   margin-top: 1em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -109,11 +89,82 @@
   text-transform: uppercase;
 }
 
-.circle {
+.portrait {
   width: 150px;
-  border-radius: 50%;
 }
 
 .date {
   font-weight: bold;
+}
+
+nav {
+  margin: 5vh 0;
+}
+
+.portfolio {
+	columns: 3;
+	-webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+.portfolio > * {
+  margin-bottom: 1em;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.images {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+@media (max-width: 1000px) {
+  .portfolio {
+  	columns: 1;
+  	-webkit-columns: 1;
+  	-moz-columns: 1;
+  }
+
+  .images {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+
+  #quote {
+    font-size: 50px;
+  }
+
+  .menu a + a {
+    margin-left: 10px;
+  }
+
+  .menu a {
+    border: 0;
+  }
+
+  .initial .menu a {
+    border: 6px solid #000;
+  }
+}
+
+.portfolio-img {
+  margin-bottom: 20px;
+}
+
+.contact {
+  font-family: 'Slabo 27px', sans-serif;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.contact a {
+  color: #AAA;
+}
+
+.contact a:hover {
+  color: #888;
+  text-decoration: none;
 }
