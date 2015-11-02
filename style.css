@@ -168,3 +168,18 @@ nav {
   color: #888;
   text-decoration: none;
 }
+
+.projects a {
+  text-decoration: none;
+  margin: auto;
+  margin-top: 100px;
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  font-family: sans-serif;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}

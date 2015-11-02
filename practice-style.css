@@ -1,0 +1,28 @@
+#circle {
+	width: 80px;
+	height: 80px;
+	background: #b13070;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  margin: auto;
+	margin-bottom: 20px;
+}
+
+.circ {
+	width: 80px;
+	height: 80px;
+	background: #b13070;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  margin: auto;
+	margin-bottom: 20px;
+}
+
+h4 {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
