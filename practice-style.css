@@ -26,3 +26,14 @@ h4 {
   text-align: center;
   padding-top: 30px;
 }
+
+.again {
+	font-family: sans-serif;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+a:visited {
+	color: black;
+}
