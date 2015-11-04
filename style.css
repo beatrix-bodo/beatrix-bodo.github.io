@@ -183,15 +183,3 @@ nav {
 .projects a:hover {
   text-decoration: underline;
 }
-
-.again {
-	font-family: sans-serif;
-	text-align: center;
-	text-decoration: none;
-	display: block;
-}
-
-a:visited {
-	color: black;
-}
-
