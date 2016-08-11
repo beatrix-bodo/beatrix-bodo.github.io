@@ -81,6 +81,15 @@
   color: black;
 }
 
+.profiles a:hover {
+  text-decoration: none;
+}
+
+.socicon-keybase {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
 .about h2 {
   margin-top: 1em;
   font-family: 'Montserrat', sans-serif;
