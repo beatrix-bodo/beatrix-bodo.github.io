@@ -1,3 +1,7 @@
+body {
+  font-size: 100%;
+}
+
 .initial {
   margin-top: 10vh;
 }
@@ -53,12 +57,19 @@
 }
 
 .about {
+  font-size: 1.4em;
   margin-top: 1em;
-  color: black;
+  color: #333;
   font-family: 'Slabo 27px', serif;
   line-height: 1.3em;
   text-rendering: optimizelegibility;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .about {
+    font-size: 1.2em;
+  }
 }
 
 .about a:hover {
@@ -86,8 +97,17 @@
 }
 
 .socicon-keybase {
-  font-size: 1.2em;
+  font-size: 2em;
   vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .profiles {
+    text-align: center;
+  }
+  .profiles i {
+    letter-spacing: .6em;
+  }
 }
 
 .about h2 {
@@ -100,6 +120,13 @@
 
 .portrait {
   width: 150px;
+}
+
+@media (max-width: 768px) {
+  .portrait {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .date {
@@ -146,16 +173,26 @@ nav {
     font-size: 50px;
   }
 
-  .menu a + a {
-    margin-left: 10px;
-  }
-
-  .menu a {
-    border: 0;
-  }
-
   .initial .menu a {
     border: 6px solid #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    text-align: center;
+  }
+  nav {
+    margin: 2vh 0;
+  }
+}
+
+@media (max-width: 371px) {
+  .menu a {
+    display: block;
+  }
+  .menu a + a {
+    margin: 15px 0;
   }
 }
 
