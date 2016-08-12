@@ -11,6 +11,14 @@ body {
   display: inline;
 }
 
+/*Changes text selection colour*/
+::selection {
+  background: #12FFF7;
+}
+::-moz-selection {
+  background: #12FFF7;
+}
+
 #quote {
   color: black;
   font-size: 80px;
