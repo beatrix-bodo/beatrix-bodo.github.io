@@ -146,13 +146,13 @@ nav {
 }
 
 .portfolio {
-	columns: 3;
-	-webkit-columns: 3;
+  columns: 3;
+  -webkit-columns: 3;
   -moz-columns: 3;
 }
 
 .portfolio > * {
-  margin-bottom: 1em;
+  padding-bottom: 1em;
   break-inside: avoid;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -166,9 +166,9 @@ nav {
 
 @media (max-width: 1000px) {
   .portfolio {
-  	columns: 1;
-  	-webkit-columns: 1;
-  	-moz-columns: 1;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
   }
 
   .images {
