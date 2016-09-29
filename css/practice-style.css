@@ -37,3 +37,27 @@ h4 {
 a:visited {
   color: black;
 }
+
+/*Labyrinth Game*/
+.row {
+  height: 60px;
+  display: block;
+}
+
+.field {
+  width: 60px;
+  height: 60px;
+  border: solid 1px blue;
+  display: inline-block;
+}
+/*End Labyrinth Game*/
+
+.about {
+	font-size: 1.2em;
+	margin-top: 2em;
+  color: #333;
+  font-family: 'Slabo 27px', serif;
+  line-height: 1.3em;
+  text-rendering: optimizelegibility;
+  text-decoration: none;
+}
