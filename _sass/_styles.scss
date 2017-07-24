@@ -6,8 +6,25 @@ body {
   background-color: white;
 }
 
+/*Changes text selection colour*/
+::selection {
+  background: #12FFF7;
+}
+::-moz-selection {
+  background: #12FFF7;
+}
+
 .home {
   margin-top: 10vh;
+}
+
+#quote {
+  color: black;
+  font-size: 80px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  line-height: 1.2;
 }
 
 .menu {
@@ -87,3 +104,107 @@ body {
   height: auto;
   margin: auto;
 }
+
+.images {
+  .img-responsive {
+    margin-bottom: 1rem;
+  }
+}
+
+.highlight {
+  background: linear-gradient(-20deg, #B3FFAB 10%, #12FFF7 90%);
+  display: inline;
+}
+
+footer {
+  text-align: center;
+  margin: 3rem auto 1rem;
+}
+
+// Contact copy
+.copy-contact {
+  p, a {
+    font-family: 'Slabo 27px', sans-serif;
+    display: inline-block;
+  }
+}
+
+.fa-clipboard {
+  vertical-align: middle;
+  padding: .5rem;
+  cursor: pointer;
+
+  &:hover {
+    color: $main-color;
+  }
+}
+// End Contact copy
+
+// About page
+.about {
+  font-size: 1.2em;
+  margin-top: 1em;
+  color: $text-color;
+  font-family: 'Slabo 27px', serif;
+  line-height: 1.3em;
+  text-rendering: optimizelegibility;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: #0000f1;
+    }
+    &:hover {
+      color: #12FFF7;
+    }
+  }
+
+  h2 {
+    margin-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+}
+
+.profiles i {
+  @include mobile-only {
+    text-align: center;
+  }
+
+  margin-top: 1em;
+  color: black;
+  letter-spacing: .3em;
+  text-decoration: none;
+  transition: color .2s;
+
+  i {
+    @include mobile-only {
+      letter-spacing: .6em;
+    }
+
+    &:hover {
+      color: #12FFF7;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: black;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.socicon-keybase {
+  font-size: 2em;
+  vertical-align: middle;
+}
+

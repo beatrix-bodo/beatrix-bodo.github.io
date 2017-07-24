@@ -15,8 +15,18 @@ title: About Trixi
 <section class="about">
   <ul>
     <h2>Contact</h2>
-    <li>hello@trixi.graphics</li>
-    <li><a href="tel:+420731713612">+420 731 713 612</a></li>
+    <li>
+      <div class="copy-contact">
+        <p id="copy-mail">hello@trixi.graphics</p>
+        <i class="fa fa-clipboard" aria-hidden="true" onclick="copyToClipboard('#copy-mail')"></i>
+      </div>
+    </li>
+    <li>
+      <div class="copy-contact">
+        <a href="tel:+420731713612" id="copy-tel">+420 731 713 612</a>
+        <i class="fa fa-clipboard" aria-hidden="true" onclick="copyToClipboard('#copy-tel')"></i>
+      </div>
+    </li>
   </ul>
 </section>
 <section class="profiles">
@@ -31,7 +41,7 @@ title: About Trixi
   <ul>
     <h2>Skills</h2>
     <li>HTML5</li>
-    <li>SASS</li>
+    <li>Sass</li>
     <li>CSS3</li>
     <li>Illustrator</li>
     <li>InDesign</li>

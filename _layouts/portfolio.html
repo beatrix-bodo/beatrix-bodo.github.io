@@ -9,4 +9,9 @@ layout: base
   <a href="{{ image }}"><img class="img-responsive portfolio-img" src="{{ image }}" alt=""></a>
   {% endfor %}
 </section>
-<footer class="contact"><a href="mailto:hello@trixi.graphics">hello@trixi.graphics</a></footer>
+<footer>
+  <div class="copy-contact">
+    <p id="copy-mail">hello@trixi.graphics</p>
+    <i class="fa fa-clipboard" aria-hidden="true" onclick="copyToClipboard('#copy-mail')"></i>
+  </div>
+</footer>

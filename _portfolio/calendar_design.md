@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Calendar design
 thumbnail: '/images/thumbnails/thumbnail_8.png'
 images:
@@ -17,4 +17,4 @@ images:
   - '/images/calendar_design/calendar_design13.png'
   - '/images/calendar_design/calendar_design14.png'
 year: 2012
----
+--- -->

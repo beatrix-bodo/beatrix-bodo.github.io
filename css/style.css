@@ -1,30 +1,25 @@
-.home {
+/* .home {
   margin-top: 10vh;
-}
-
-.highlight {
-  background: linear-gradient(-20deg, #B3FFAB 10%, #12FFF7 90%);
-  display: inline;
-}
+} */
 
 /*Changes text selection colour*/
-::selection {
+/* ::selection {
   background: #12FFF7;
 }
 ::-moz-selection {
   background: #12FFF7;
-}
+} */
 
-#quote {
+/* #quote {
   color: black;
   font-size: 80px;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
   text-rendering: optimizelegibility;
   line-height: 1.2;
-}
+} */
 
-.about {
+/* .about {
   font-size: 1.4em;
   margin-top: 1em;
   color: #333;
@@ -42,41 +37,9 @@
 
 .about a:hover {
   color: #12FFF7;
-}
+} */
 
-.profiles i {
-  margin-top: 1em;
-  color: black;
-  letter-spacing: .3em;
-  text-decoration: none;
-  transition: color .2s;
-}
 
-.profiles i:hover {
-  color: #12FFF7;
-}
-
-.profiles a:visited {
-  color: black;
-}
-
-.profiles a:hover {
-  text-decoration: none;
-}
-
-.socicon-keybase {
-  font-size: 2em;
-  vertical-align: middle;
-}
-
-@media (max-width: 768px) {
-  .profiles {
-    text-align: center;
-  }
-  .profiles i {
-    letter-spacing: .6em;
-  }
-}
 
 .about h2 {
   margin-top: 1em;
@@ -166,21 +129,6 @@ nav {
 
 .portfolio-img {
   margin-bottom: 20px;
-}
-
-.contact {
-  font-family: 'Slabo 27px', sans-serif;
-  text-align: center;
-  margin: 1em 0;
-}
-
-.contact a {
-  color: #AAA;
-}
-
-.contact a:hover {
-  color: #888;
-  text-decoration: none;
 }
 
 .projects a {
