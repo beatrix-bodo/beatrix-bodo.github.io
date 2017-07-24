@@ -3,10 +3,10 @@ layout: base
 ---
 <h2 class="about">{{ page.title }} ({{ page.year }})</h2>
 
-<div class="about">{{ content }}</div>
-<div class="images">
+<section class="about">{{ content }}</section>
+<section class="images">
   {% for image in page.images %}
   <a href="{{ image }}"><img class="img-responsive portfolio-img" src="{{ image }}" alt=""></a>
   {% endfor %}
-</div>
+</section>
 <footer class="contact"><a href="mailto:hello@trixi.graphics">hello@trixi.graphics</a></footer>

@@ -1,0 +1,20 @@
+$main-color: #12FFF7;
+$secondary-color: #B3FFAB;
+$text-color: #333333;
+
+// Responsive breakpoints
+@mixin mobile-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin tablet-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin desktop-lg-up {
+  @media (min-width: 1800px) { @content; }
+}

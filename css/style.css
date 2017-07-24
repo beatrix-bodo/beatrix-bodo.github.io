@@ -1,8 +1,4 @@
-body {
-  font-size: 100%;
-}
-
-.initial {
+.home {
   margin-top: 10vh;
 }
 
@@ -26,42 +22,6 @@ body {
   font-weight: bold;
   text-rendering: optimizelegibility;
   line-height: 1.2;
-}
-
-.initial .menu {
-  position: relative;
-  margin-bottom: 100px;
-  margin-top: 10px;
-}
-
-.menu a {
-  color: #000;
-  display: inline-block;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  border: 6px solid #000;
-  min-width: 80px;
-  text-decoration: none;
-  transition: color .3s, background-color .3s;
-  text-rendering: optimizelegibility;
-}
-
-.menu a:hover {
-  background-color: #B3FFAB;
-  color: black;
-  text-decoration: none;
-}
-
-.menu a + a {
-  margin-left: 20px;
-}
-
-.menu a li {
-  padding: 0 10px;
 }
 
 .about {
@@ -181,7 +141,7 @@ nav {
     font-size: 50px;
   }
 
-  .initial .menu a {
+  .home .menu a {
     border: 6px solid #000;
   }
 }

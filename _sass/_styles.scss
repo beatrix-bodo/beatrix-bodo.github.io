@@ -1,0 +1,89 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: white;
+}
+
+.home {
+  margin-top: 10vh;
+}
+
+.menu {
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 10px;
+
+  a {
+    @include tablet-up {
+      margin: 1rem;
+    }
+    @include mobile-only {
+      display: block;
+      margin: 1rem;
+    }
+
+    color: black;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 6px solid black;
+    min-width: 80px;
+    text-decoration: none;
+    transition: color .3s, background-color .3s;
+    text-rendering: optimizelegibility;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: black;
+      text-decoration: none;
+    }
+
+    & + a {
+      @include tablet-up {
+        margin: 1rem;
+      }
+      @include mobile-only {
+        margin: 1rem;
+      }
+
+      margin-left: 2rem;
+    }
+
+    & li {
+      padding: 0 10px;
+    }
+  }
+}
+
+.main-container {
+  margin: 0 auto;
+
+  @include mobile-only {
+    width: 100%;
+  }
+  @include tablet-up {
+    width: 100%;
+  }
+  @include tablet-landscape-up {
+    width: 850px;
+  }
+  @include desktop-up {
+    width: 1100px;
+  }
+  @include desktop-lg-up {
+    width: 1100px;
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}

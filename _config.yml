@@ -7,3 +7,5 @@ defaults:
       type: portfolio
     values:
       layout: portfolio
+gems:
+  - jekyll-sass-converter
