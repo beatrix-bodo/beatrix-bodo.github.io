@@ -40,6 +40,22 @@ section {
   line-height: 1.2;
 }
 
+.reload-link {
+  display: block;
+  font-family: 'Arial';
+  margin: 1rem 0;
+  font-weight: 700;
+  color: black;
+  width: 10rem;
+
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: darken($secondary-color, 50%);
+  }
+}
+
 nav {
   margin: 2rem 0;
 }
@@ -185,7 +201,7 @@ footer {
   cursor: pointer;
 
   &:hover {
-    color: $main-color;
+    color: darken($main-color, 15%);
   }
 }
 // End Contact copy
@@ -213,12 +229,10 @@ footer {
 
   a {
     text-decoration: none;
+    color: darken($main-color, 15%);
 
-    &:visited {
-      color: #0000f1;
-    }
     &:hover {
-      color: #12FFF7;
+      text-decoration: underline;
     }
   }
 
@@ -270,7 +284,7 @@ footer {
       color: black;
 
       &:hover {
-        color: #12FFF7;
+        color: darken($main-color, 15%);
       }
     }
   }
