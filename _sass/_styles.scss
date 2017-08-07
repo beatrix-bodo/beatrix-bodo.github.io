@@ -197,7 +197,7 @@ footer {
 
 .fa-clipboard {
   vertical-align: middle;
-  padding: .5rem;
+  padding: .2rem .5rem;
   cursor: pointer;
 
   &:hover {
@@ -207,7 +207,23 @@ footer {
 // End Contact copy
 
 // About page
+.portrait {
+  @include max-mobile {
+    margin: 0 auto;
+    display: block;
+  }
+
+  width: 150px;
+  border-radius: 75px;
+  display: inline-block;
+  align-self: center;
+}
+
 .about-bio {
+  @include max-mobile {
+    flex-direction: column;
+  }
+
   display: flex;
 }
 
@@ -223,7 +239,7 @@ footer {
   font-size: 1.2em;
   color: $text-color;
   font-family: 'Slabo 27px', serif;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   text-rendering: optimizelegibility;
   text-decoration: none;
 
@@ -237,7 +253,7 @@ footer {
   }
 
   h2 {
-    margin-top: 1rem;
+    margin: 1.5rem 0 .5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
@@ -245,18 +261,14 @@ footer {
   }
 }
 
-.portrait {
-  @include max-mobile {
-    margin: 0 auto;
-    display: block;
+.skills {
+  display: flex;
+  flex-flow: wrap row;
+
+  div {
+    width: 50%;
   }
-
-  width: 150px;
-  border-radius: 75px;
-  display: inline-block;
-  align-self: center;
 }
-
 
 .profiles {
   @include max-mobile {
@@ -278,7 +290,6 @@ footer {
         letter-spacing: .6rem;
       }
 
-      margin-top: 1rem;
       letter-spacing: .3rem;
       transition: color .2s;
       color: black;
@@ -286,6 +297,10 @@ footer {
       &:hover {
         color: darken($main-color, 15%);
       }
+    }
+
+    .fa {
+      font-size: 1.6rem;
     }
   }
 }

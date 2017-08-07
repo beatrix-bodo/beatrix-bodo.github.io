@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Mesék, amelyek rosszul végződnek - Tales with Sad Endings book design
 thumbnail: '/images/thumbnails/thumbnail_9.png'
 images:
@@ -13,4 +13,4 @@ images:
   - '/images/mesek/mesek9.png'
   - '/images/mesek/mesek10.png'
 year: 2013
----
+--- -->
