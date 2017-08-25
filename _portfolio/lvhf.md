@@ -1,5 +1,5 @@
 ---
-title: LVHF musical festival website design and coding
+title: LVHF music festival web design and SCSS
 thumbnail: '/images/thumbnails/thumbnail_17.png'
 images:
   - '/images/lvhf/lvhf1.png'
