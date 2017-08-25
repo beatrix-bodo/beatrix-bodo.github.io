@@ -67,10 +67,9 @@ nav {
     @include min-tablet {
       margin: 1rem;
     }
-    // @include max-mobile {
-    //   display: block;
-    //   margin: 1rem;
-    // }
+    @include max-tablet {
+      margin: .5rem .5rem;
+    }
 
     color: black;
     display: inline-block;
@@ -90,17 +89,6 @@ nav {
       background-color: $secondary-color;
       color: black;
       text-decoration: none;
-    }
-
-    & + a {
-      @include min-tablet {
-        margin: 1rem;
-      }
-      @include max-mobile {
-        margin: 1rem;
-      }
-
-      margin-left: 2rem;
     }
 
     & li {
