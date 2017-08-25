@@ -1,4 +1,4 @@
-<!-- ---
+---
 title: City history volume design, titled Várkert
 thumbnail: '/images/thumbnails/thumbnail_5.png'
 images:
@@ -10,4 +10,4 @@ images:
   - '/images/city_history_volume/city_history_volume6.png'
   - '/images/city_history_volume/city_history_volume7.png'
 year: 2011
---- -->
+---

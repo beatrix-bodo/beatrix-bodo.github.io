@@ -1,4 +1,4 @@
-<!-- ---
+---
 title: Vonal - magazine design
 thumbnail: '/images/thumbnails/thumbnail_7.png'
 images:
@@ -13,4 +13,4 @@ images:
   - '/images/vonal_magazine_design/vonal_magazine9.png'
   - '/images/vonal_magazine_design/vonal_magazine10.png'
 year: 2012
---- -->
+---

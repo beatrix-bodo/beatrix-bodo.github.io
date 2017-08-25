@@ -13,10 +13,10 @@ section {
 
 /*Changes text selection colour*/
 ::selection {
-  background: #12FFF7;
+  background: $main-color;
 }
 ::-moz-selection {
-  background: #12FFF7;
+  background: $main-color;
 }
 
 .quote {
@@ -67,10 +67,10 @@ nav {
     @include min-tablet {
       margin: 1rem;
     }
-    @include max-mobile {
-      display: block;
-      margin: 1rem;
-    }
+    // @include max-mobile {
+    //   display: block;
+    //   margin: 1rem;
+    // }
 
     color: black;
     display: inline-block;
@@ -134,6 +134,66 @@ footer {
   }
 }
 
+// Portfolio
+.portfolio {
+  @include max-tablet {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+
+  & > * {
+    padding-bottom: 1em;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+.images {
+  @include max-mobile {
+    .portfolio-img {
+      margin-bottom: 20px;
+    }
+  }
+
+  columns: 1;
+  -webkit-columns: 1;
+  -moz-columns: 1;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #quote {
+    font-size: 50px;
+  }
+
+  .home .menu a {
+    border: 6px solid black;
+  }
+
+  .menu {
+    text-align: center;
+  }
+  nav {
+    margin: 2vh 0;
+  }
+}
+
+// @media (max-width: 371px) {
+//   .menu a {
+//     display: block;
+//   }
+//   .menu a + a {
+//     margin: 15px 0;
+//   }
+// }
+
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -143,29 +203,30 @@ footer {
 
 .images {
   .img-responsive {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
 }
 
 .highlight {
-  background: linear-gradient(-20deg, #B3FFAB 10%, #12FFF7 90%);
+  background: linear-gradient(-20deg, $secondary-color 10%, $main-color 90%);
   display: inline;
 }
 
 .caption {
   font-size: 1.2em;
   color: $text-color;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.3rem;
   text-rendering: optimizelegibility;
   text-decoration: none;
   margin: 1rem 0;
 }
+// End Portfolio
 
 // Contact copy
 .copy-contact {
   p, a {
-    font-family: 'Slabo 27px', sans-serif;
+    font-family: 'Arial', sans-serif;
     display: inline-block;
   }
 
@@ -207,6 +268,55 @@ footer {
 // End Contact copy
 
 // About page
+.columns {
+  @include max-tablet-landscape {
+    padding: 1rem 2rem 2rem;
+  }
+  @include max-tablet {
+    justify-content: center;
+    padding: 1rem 1rem 2rem;
+  }
+  display: flex;
+  flex-flow: wrap row;
+
+  .about {
+    @include max-tablet-landscape {
+      width: 45%;
+      padding: 1rem;
+    }
+    @include max-mobile {
+      width: 100%;
+    }
+    @include max-mobile {
+      text-align: center;
+    }
+    
+    &:nth-child(1) {
+      @include max-tablet-landscape {
+        width: 45%;
+      }
+      @include max-mobile {
+        width: 100%;
+      }
+
+      width: 25%;
+    }
+
+    &:nth-child(3) {
+      @include max-tablet-landscape {
+        width: 45%;
+      }
+      @include max-mobile {
+        width: 100%;
+      }
+
+      width: 16%;
+    }
+
+    width: 21%;
+  }
+}
+
 .portrait {
   @include max-mobile {
     margin: 0 auto;
@@ -235,11 +345,15 @@ footer {
   }
 }
 
+.contact-title {
+  color: darken($main-color, 15%);
+}
+
 .about {
   font-size: 1.2em;
   color: $text-color;
-  font-family: 'Slabo 27px', serif;
-  line-height: 1.5rem;
+  font-family: 'Arial', serif;
+  line-height: 1.7rem;
   text-rendering: optimizelegibility;
   text-decoration: none;
 
@@ -261,19 +375,12 @@ footer {
   }
 }
 
-.skills {
-  display: flex;
-  flex-flow: wrap row;
-
-  div {
-    width: 50%;
-  }
-}
-
 .profiles {
   @include max-mobile {
-    text-align: center;
-  }
+  text-align: center;
+}
+
+margin-top: 1rem;
 
   a {
     text-decoration: none;
@@ -313,3 +420,71 @@ footer {
 .date {
   font-weight: bold;
 }
+
+// Private pages
+.projects {
+  a {
+    text-decoration: none;
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    font-family: sans-serif;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#circle {
+  width: 80px;
+  height: 80px;
+  background: #b13070;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.circ {
+  width: 80px;
+  height: 80px;
+  background: #b13070;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.again {
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+/*Labyrinth Game*/
+.row {
+  height: 60px;
+  display: block;
+}
+
+.field {
+  width: 60px;
+  height: 60px;
+  border: solid 1px blue;
+  display: inline-block;
+}
+/*End Labyrinth Game*/

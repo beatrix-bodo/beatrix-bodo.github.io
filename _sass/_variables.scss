@@ -12,8 +12,14 @@ $text-color: #333333;
 @mixin min-tablet {
   @media (min-width: 769px) { @content; }
 }
+@mixin max-tablet-landscape {
+  @media (max-width: 900px) { @content; }
+}
 @mixin min-tablet-landscape {
   @media (min-width: 900px) { @content; }
+}
+@mixin max-desktop {
+  @media (max-width: 1199px) { @content; }
 }
 @mixin min-desktop {
   @media (min-width: 1200px) { @content; }
