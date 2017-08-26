@@ -47,12 +47,18 @@ section {
   font-weight: 700;
   color: black;
   width: 10rem;
+  text-decoration: none;
+  text-align: center;
+  padding: .7rem .8rem;
+  border: solid 2px black;
+  transition: background .3s;
 
   &:visited {
     color: black;
   }
   &:hover {
-    color: darken($secondary-color, 50%);
+    color: black;
+    background: $secondary-color;
   }
 }
 
@@ -399,71 +405,3 @@ margin-top: 1rem;
 .date {
   font-weight: bold;
 }
-
-// Private pages
-.projects {
-  a {
-    text-decoration: none;
-    margin: auto;
-    margin-top: 100px;
-    display: block;
-    text-align: center;
-    font-size: 1.5em;
-    color: black;
-    font-family: sans-serif;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-#circle {
-  width: 80px;
-  height: 80px;
-  background: #b13070;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.circ {
-  width: 80px;
-  height: 80px;
-  background: #b13070;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-h4 {
-  color: #fff;
-  font-family: sans-serif;
-  text-align: center;
-  padding-top: 30px;
-}
-
-.again {
-  font-family: sans-serif;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-}
-
-/*Labyrinth Game*/
-.row {
-  height: 60px;
-  display: block;
-}
-
-.field {
-  width: 60px;
-  height: 60px;
-  border: solid 1px blue;
-  display: inline-block;
-}
-/*End Labyrinth Game*/
