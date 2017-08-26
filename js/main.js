@@ -21,3 +21,8 @@ $('.tel-tooltip-icon').click(function(){
     .delay(500)
     .fadeOut('fast');
 });
+
+// PhotoSwipe for image viewer in portfolio
+$(function() {
+    $('.caption + .images').photoSwipe();
+  });
