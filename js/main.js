@@ -24,5 +24,13 @@ $('.tel-tooltip-icon').click(function(){
 
 // PhotoSwipe for image viewer in portfolio
 $(function() {
-    $('.caption + .images').photoSwipe();
+  $('.caption + .images').photoSwipe('a', {
+    getDoubleTapZoom: function(isMouseClick, item) {
+      if(isMouseClick) {
+        return 0.38;
+      } else {
+        return item.initialZoomLevel < 0.7 ? 1 : 1.5;
+      }
+    }
   });
+});
