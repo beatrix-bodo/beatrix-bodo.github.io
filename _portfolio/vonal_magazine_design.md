@@ -1,5 +1,5 @@
 ---
-title: Vonal - magazine design
+title: Vonal — magazine design
 thumbnail: '/images/thumbnails/thumbnail_7.png'
 images:
   - '/images/vonal_magazine_design/vonal_magazine1.png'
