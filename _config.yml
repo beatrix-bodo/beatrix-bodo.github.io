@@ -1,11 +1,19 @@
 collections:
   portfolio:
     output: true
+  archive:
+    output: true
 defaults:
   - scope:
       path: ""
       type: portfolio
     values:
       layout: portfolio
+  - scope:
+      path: ""
+      type: archive
+    values:
+      layout: portfolio
+
 gems:
   - jekyll-sass-converter

@@ -1,0 +1,17 @@
+---
+layout: base
+---
+<h2 class="caption">{{ page.title }} ({{ page.year }})</h2>
+
+<div class="images">
+  {% for image in page.images %}
+  <a href="{{ image }}"><img class="img-responsive portfolio-img" src="{{ image }}" alt=""></a>
+  {% endfor %}
+</div>
+<footer>
+  <div class="copy-contact">
+    <p id="copy-mail-tooltip">Copied!</p>
+    <p id="copy-mail">hello@trixi.graphics</p>
+    <i class="fa fa-clipboard mail-tooltip-icon" aria-hidden="true" onclick="copyToClipboard('#copy-mail')"></i>
+  </div>
+</footer>

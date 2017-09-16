@@ -1,0 +1,13 @@
+---
+layout: base
+title: Trixi's Archive
+---
+<div class="portfolio">
+  {% for item in site.portfolio %}
+  <div>
+    <a href="{{ item.url }}"><img class="img-responsive" alt="{{ item.title }}" title="{{ item.title }} ({{ item.year }})" data-layzr="{{ item.thumbnail }}"></a>
+  </div>
+  {% endfor %}
+</div>
+<script src="/js/layzr.min.js"></script>
+<script>var layzr = new Layzr();</script>
