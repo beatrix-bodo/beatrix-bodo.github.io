@@ -3,8 +3,9 @@ layout: base
 title: Trixi's Archive
 ---
 <div class="portfolio">
-  {% for item in site.portfolio %}
+  {% for item in site.archive %}
   <div>
+    <a href="/archive.html"><-- Back</a>
     <a href="{{ item.url }}"><img class="img-responsive" alt="{{ item.title }}" title="{{ item.title }} ({{ item.year }})" data-layzr="{{ item.thumbnail }}"></a>
   </div>
   {% endfor %}
