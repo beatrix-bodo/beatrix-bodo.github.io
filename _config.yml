@@ -13,7 +13,7 @@ defaults:
       path: ""
       type: archive
     values:
-      layout: portfolio
+      layout: archive
 
 gems:
   - jekyll-sass-converter

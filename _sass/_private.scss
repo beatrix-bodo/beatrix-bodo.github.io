@@ -64,3 +64,38 @@ h4 {
   display: inline-block;
 }
 /*End Labyrinth Game*/
+
+// Archive
+.back-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0 2rem;
+
+  a {
+    text-decoration: none;
+
+    i {
+      transition: all .1s;
+    }
+
+    &:visited {
+      color: #666;
+    }
+    &:hover {
+      color: darken($main-color, 15%);
+    }
+
+    &:hover {
+      i {
+        margin-right: .3rem;
+      }
+    }
+  }
+
+  span {
+    font-family: 'Arial', sans-serif;
+    display: inline-block;
+    color: #666;
+  }
+}
+// End Archive
